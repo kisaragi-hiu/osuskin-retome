@@ -8,6 +8,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="43px"
@@ -24,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313708"
-     inkscape:cx="22.736178"
-     inkscape:cy="17.735608"
+     inkscape:zoom="13.994137"
+     inkscape:cx="23.383545"
+     inkscape:cy="20.013862"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -37,6 +38,18 @@
      inkscape:window-maximized="1" />
   <defs
      id="defs3680">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4582">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.53333336"
+         offset="0"
+         id="stop4578" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4580" />
+    </linearGradient>
     <linearGradient
        id="linearGradient6995"
        osb:paint="solid">
@@ -59,19 +72,26 @@
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
          transform="scale(0.8) translate(12.5,0)" />
     </marker>
-    <filter
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask4562">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4564"
+         d="m 36.976214,8.6851774 c 1.134975,-0.0069 1.66667,0.5888069 1.187546,1.6933626 1.430242,7.647129 0.213383,15.417016 0.07126,22.145841 0.527213,1.285828 0.413906,1.762776 -1.104419,2.101709 C 20.130507,29.887905 32.754842,9.0116125 36.976214,8.6851774 Z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.08089721px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </mask>
+    <radialGradient
        inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter4787"
-       x="-0.0156"
-       width="1.0312"
-       y="-0.0156"
-       height="1.0312">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.19253677"
-         id="feGaussianBlur4789" />
-    </filter>
+       xlink:href="#linearGradient4582"
+       id="radialGradient4584"
+       cx="21.5"
+       cy="21.5"
+       fx="21.5"
+       fy="21.5"
+       r="21.5"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata3683">
@@ -90,11 +110,19 @@
      inkscape:groupmode="layer"
      inkscape:label="レイヤー 1">
     <circle
-       style="fill:#ffffff;fill-opacity:0.33333333;stroke:#c5a8ff;stroke-width:1.00475299;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter4787)"
+       style="fill:url(#radialGradient4584);fill-opacity:1;stroke:none;stroke-width:2.32208681;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="path4566"
+       cx="21.5"
+       cy="21.5"
+       r="21.5" />
+    <circle
+       style="fill:none;fill-opacity:0.33333333;stroke:#c5a8ff;stroke-width:1.00415349;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        id="path4517"
        cx="46.385384"
        cy="21.5"
        r="14.810521"
-       transform="matrix(0.92917317,0,0,0.99925108,5.9369803,0.01610101)" />
+       transform="matrix(0.9303732,0,0,0.9199708,4.1982583,1.7206278)"
+       clip-path="none"
+       mask="url(#mask4562)" />
   </g>
 </svg>
