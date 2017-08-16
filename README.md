@@ -6,9 +6,6 @@ Hitsounds are from Re.m by Choilicious, <https://osu.ppy.sh/forum/t/481314>.
 copy/applause.ogg, copy/failsound.ogg:
 See `copy/0.Credits.txt`.
 
-copy/\*.wav:
-Copied from Re.m, by Choilicious. <https://osu.ppy.sh/forum/t/481314>
-
 everything else:
 WTFPL
 

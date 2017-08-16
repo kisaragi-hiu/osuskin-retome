@@ -9,7 +9,3 @@ failsound.ogg: Gate of Steiner
     Sheet: FireWhale on Ichigo's Sheet Music (http://ichigos.com/)
     Performer: Kisaragi Hiu
 
-drum*.wav, nightcore-*.wav, normal-*.wav, soft-*.wav, spinner*.wav:
-    This hitsound selection is copied from Re.m by Choilicious.
-    Re.m: https://osu.ppy.sh/forum/t/481314
-
