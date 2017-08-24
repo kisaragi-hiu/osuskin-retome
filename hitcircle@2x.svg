@@ -15,7 +15,7 @@
    viewBox="0 0 256 256"
    version="1.1"
    id="SVGRoot"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="hitcircle@2x.svg">
   <sodipodi:namedview
      id="base"
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="72.160818"
-     inkscape:cy="125.12397"
+     inkscape:cx="114.91082"
+     inkscape:cy="115.62397"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1025"
+     inkscape:window-height="1052"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="28"
      inkscape:window-maximized="1" />
   <defs
      id="defs3680">
@@ -81,7 +81,7 @@
        cx="128"
        cy="128"
        r="118.14507"
-       style="fill:#eeeee8;fill-opacity:0.50196078;stroke:none;stroke-width:12.24565315;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+       style="fill:#000000;fill-opacity:0.3137255;stroke:none;stroke-width:12.24565315;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
     <circle
        id="path3702"
        cx="128"
