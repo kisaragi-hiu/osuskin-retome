@@ -3,11 +3,11 @@
 ## Main Colors:
 
 - Purple
-Dark: A55BCE Light: C5A8FF
+Dark: A868E8 Light: C48BFF
 
 - Green
-Light: 6FCE3B Lighter: B6FF8E
+Light: 5ED191 Lighter: 72FFB1
 
 - White (FFFFFF)
 
-- Gold (FFC645)
+- Gold (FFCD72)
