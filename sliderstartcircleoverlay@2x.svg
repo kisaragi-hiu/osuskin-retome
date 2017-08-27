@@ -16,7 +16,7 @@
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="sliderfollowcircle.svg">
+   sodipodi:docname="sliderstartcircleoverlay@2x.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="-4.57846"
-     inkscape:cy="108.73285"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="54.182473"
+     inkscape:cy="101.74481"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -59,6 +59,20 @@
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
          transform="scale(0.8) translate(12.5,0)" />
     </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Lstart-3"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4509-5" />
+    </marker>
   </defs>
   <metadata
      id="metadata3683">
@@ -77,10 +91,16 @@
      inkscape:groupmode="layer"
      inkscape:label="レイヤー 1">
     <circle
+       style="fill:none;fill-opacity:0.50196078;stroke:#c48bff;stroke-width:19.68086243;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       r="114.65957"
+       cy="128"
+       cx="128"
+       id="circle8537" />
+    <circle
        id="circle8539"
        cx="128"
        cy="128"
-       style="fill:#a868e8;fill-opacity:0.13333334;stroke:none;stroke-width:13.21528625;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       r="127.5" />
+       style="fill:#000000;fill-opacity:0.19607843;stroke:#ffffff;stroke-width:12.31779671;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667;paint-order:normal"
+       r="118.8411" />
   </g>
 </svg>

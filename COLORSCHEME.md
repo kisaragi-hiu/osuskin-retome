@@ -6,7 +6,11 @@
 Dark: A868E8 Light: C48BFF
 
 - Green
-Light: 5ED191 Lighter: 72FFB1
+Dark (Prev. "Light"): 5ED191
+Light (Prev. "Lighter"): 72FFB1
+
+- Blue
+Dark: 5EB4D1 Light: 7EDEFF
 
 - White (FFFFFF)
 

@@ -16,7 +16,7 @@
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="sliderfollowcircle.svg">
+   sodipodi:docname="sliderstartcircle@2x.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="-4.57846"
-     inkscape:cy="108.73285"
+     inkscape:cx="13.66082"
+     inkscape:cy="115.62397"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -80,7 +80,13 @@
        id="circle8539"
        cx="128"
        cy="128"
-       style="fill:#a868e8;fill-opacity:0.13333334;stroke:none;stroke-width:13.21528625;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       r="127.5" />
+       r="118.14507"
+       style="fill:#000000;fill-opacity:0.3137255;stroke:none;stroke-width:12.24565315;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <circle
+       id="path3702"
+       cx="128"
+       cy="128"
+       style="fill:none;stroke:#000000;stroke-width:22.78413582;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.53333285;paint-order:normal"
+       r="114.60793" />
   </g>
 </svg>
