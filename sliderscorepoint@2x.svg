@@ -10,13 +10,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64px"
-   height="64px"
-   viewBox="0 0 64 64"
+   width="32px"
+   height="32px"
+   viewBox="0 0 32 32"
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="cursor@2x.svg">
+   sodipodi:docname="sliderscorepoint@2x.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="-0.96880211"
-     inkscape:cy="16.762367"
+     inkscape:zoom="22.627417"
+     inkscape:cx="18.483116"
+     inkscape:cy="16.283775"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -77,10 +77,16 @@
      inkscape:groupmode="layer"
      inkscape:label="レイヤー 1">
     <circle
+       id="path3702"
+       cx="16"
+       cy="16"
+       style="fill:#000000;fill-opacity:0.53333285;stroke:none;stroke-width:22.7840023;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.53333285;paint-order:normal"
+       r="15.60061" />
+    <circle
        id="circle8539"
-       cx="32"
-       cy="32"
-       style="fill:#000000;fill-opacity:0.33333334;stroke:#ff7272;stroke-width:4.85900021;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       r="29.070633" />
+       cx="16"
+       cy="16"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12.24565411;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       r="14.347956" />
   </g>
 </svg>
