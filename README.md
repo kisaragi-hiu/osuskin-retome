@@ -1,12 +1,13 @@
 # Retome
 Basically my personal osu! skin, keeping non-original assets to a minimum.
-Hitsounds are from Re.m by Choilicious, <https://osu.ppy.sh/forum/t/481314>.
 
 ## License
-copy/applause.ogg, copy/failsound.ogg:
+### copy/applause.ogg, copy/failsound.ogg
+
 See `copy/0.Credits.txt`.
 
-everything else:
+### everything else
+
 WTFPL
 
 ```
