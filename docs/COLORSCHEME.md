@@ -1,6 +1,4 @@
 # Colorscheme
-***WIP***
-## Main Colors:
 
 - Purple
 Dark: A868E8 Light: C48BFF
