@@ -16,7 +16,7 @@
    viewBox="0 0 43 43"
    version="1.1"
    id="SVGRoot"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="inputoverlay-key.svg">
   <sodipodi:namedview
      id="base"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="13.994137"
-     inkscape:cx="23.383545"
-     inkscape:cy="20.013862"
+     inkscape:cx="17.059468"
+     inkscape:cy="21.085739"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -92,6 +92,29 @@
        fy="21.5"
        r="21.5"
        gradientUnits="userSpaceOnUse" />
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask4562-3">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4564-6"
+         d="m 36.976214,8.6851774 c 1.134975,-0.0069 1.66667,0.5888069 1.187546,1.6933626 1.430242,7.647129 0.213383,15.417016 0.07126,22.145841 0.527213,1.285828 0.413906,1.762776 -1.104419,2.101709 C 20.130507,29.887905 32.754842,9.0116125 36.976214,8.6851774 Z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.08089721px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </mask>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1241"
+       x="-0.099999999999999992"
+       width="1.1012014000000001"
+       y="-0.045600721"
+       height="1.0912014">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.56000000000000005"
+         id="feGaussianBlur1243" />
+    </filter>
   </defs>
   <metadata
      id="metadata3683">
@@ -116,7 +139,7 @@
        cy="21.5"
        r="21.5" />
     <circle
-       style="fill:none;fill-opacity:0.33333333;stroke:#c5a8ff;stroke-width:1.00415349;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       style="fill:none;fill-opacity:0.33333333;stroke:#ffffff;stroke-width:1.00415349;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        id="path4517"
        cx="46.385384"
        cy="21.5"
@@ -124,5 +147,14 @@
        transform="matrix(0.9303732,0,0,0.9199708,4.1982583,1.7206278)"
        clip-path="none"
        mask="url(#mask4562)" />
+    <circle
+       style="fill:none;fill-opacity:0.33333333;stroke:#ffffff;stroke-width:1.00415349;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter1241)"
+       id="path4517-7"
+       cx="46.385384"
+       cy="21.5"
+       r="14.810521"
+       transform="matrix(0.9303732,0,0,0.9199708,4.1982583,1.7206278)"
+       clip-path="none"
+       mask="url(#mask4562-3)" />
   </g>
 </svg>
