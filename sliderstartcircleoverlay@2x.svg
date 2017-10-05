@@ -10,13 +10,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="180"
-   height="12"
-   viewBox="0 0 180 12"
+   width="290"
+   height="290"
+   viewBox="0 0 290 290"
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="followpoint-4@2x.svg">
+   sodipodi:docname="sliderstartcircleoverlay@2x.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.9755245"
-     inkscape:cx="152.95193"
-     inkscape:cy="13.344336"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-45.254435"
+     inkscape:cy="136.93337"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -64,15 +64,15 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter4814"
-       x="-0.011063105"
-       width="1.0221262"
-       y="-0.45412117"
-       height="1.9082423">
+       id="filter5736"
+       x="-0.1476"
+       width="1.2952"
+       y="-0.1276"
+       height="1.2952">
       <feGaussianBlur
          inkscape:collect="always"
-         stdDeviation="1.0956263"
-         id="feGaussianBlur4816" />
+         stdDeviation="6.21"
+         id="feGaussianBlur5738" />
     </filter>
   </defs>
   <metadata
@@ -83,21 +83,40 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="bg"
+     transform="translate(0,-7)" />
+  <g
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="レイヤー 1">
+     inkscape:label="レイヤー 1"
+     transform="translate(0,-7)">
     <ellipse
        id="circle8539"
-       cx="128"
-       cy="6"
-       style="fill:#c48bff;fill-opacity:1;stroke:none;stroke-width:14.36593819;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667;paint-order:normal;filter:url(#filter4814)"
-       rx="118.8411"
-       ry="2.8951559"
-       transform="matrix(0.73518754,0,0,1,-4.104004,0)" />
+       cx="145"
+       cy="152"
+       style="fill:#633f89;fill-opacity:0.53135312;stroke:none;stroke-width:12.24565125;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       rx="115.34814"
+       ry="115.41876" />
+    <ellipse
+       style="fill:none;fill-opacity:0.50196078;stroke:#f5f1f9;stroke-width:19.68086243;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       cy="152"
+       cx="145"
+       id="circle8537"
+       rx="111.94516"
+       ry="112.01369" />
+    <circle
+       style="fill:none;fill-opacity:0.19607843;stroke:#f5f1f9;stroke-width:19.33291054;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)"
+       r="114.65957"
+       cy="143.91362"
+       cx="148.5"
+       id="circle8537-3"
+       transform="matrix(0.97632625,0,0,0.97692399,0.01555188,6.9267857)" />
   </g>
 </svg>

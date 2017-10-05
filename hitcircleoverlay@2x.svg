@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="162.42154"
-     inkscape:cy="141.23285"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="19.445833"
+     inkscape:cy="140.46891"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -83,7 +83,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -98,18 +98,25 @@
      inkscape:label="レイヤー 1"
      transform="translate(0,-7)">
     <ellipse
-       style="fill:none;fill-opacity:0.50196078;stroke:#ffffff;stroke-width:19.68086243;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="circle8539"
+       cx="145"
+       cy="152"
+       style="fill:#3f8960;fill-opacity:0.52941179;stroke:none;stroke-width:12.24565125;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       rx="115.34814"
+       ry="115.41876" />
+    <ellipse
+       style="fill:none;fill-opacity:0.50196078;stroke:#f5f1f9;stroke-width:19.68086243;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        cy="152"
        cx="145"
        id="circle8537"
-       rx="112.3214"
-       ry="112.28961" />
+       rx="111.94516"
+       ry="112.01369" />
     <circle
-       style="fill:none;fill-opacity:0.19607843;stroke:#ffffff;stroke-width:19.27676964;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)"
+       style="fill:none;fill-opacity:0.19607843;stroke:#f5f1f9;stroke-width:19.33291054;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)"
        r="114.65957"
        cy="143.91362"
        cx="148.5"
        id="circle8537-3"
-       transform="matrix(0.97960775,0,0,0.97933045,-0.47175087,6.5694264)" />
+       transform="matrix(0.97632625,0,0,0.97692399,0.01555188,6.9267857)" />
   </g>
 </svg>
