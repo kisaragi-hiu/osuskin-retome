@@ -16,3 +16,5 @@ Dark: 5EB4D1 Light: 7EDEFF
 - White (FFFFFF)
 
 - Gold (FFCD72)
+- Yellow (ffe172)
+- Orange (ffa872)
