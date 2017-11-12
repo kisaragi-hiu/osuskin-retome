@@ -1,5 +1,11 @@
 # Retome
-Basically my personal osu! skin, keeping non-original assets to a minimum.
+
+The skin of my taste, by definition.
+
+## Forum posts
+
+https://forum.gamer.com.tw/C.php?bsn=18601&snA=7113&subbsn=8&page=1&gothis=22200#22200
+https://osu.ppy.sh/community/forums/topics/630525?start=6195149
 
 ## License
 ### copy/applause.ogg, copy/failsound.ogg
