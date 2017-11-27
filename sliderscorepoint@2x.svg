@@ -10,9 +10,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="32px"
-   height="32px"
-   viewBox="0 0 32 32"
+   width="66"
+   height="66"
+   viewBox="0 0 66 66"
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="18.483116"
-     inkscape:cy="16.283775"
+     inkscape:zoom="12.454545"
+     inkscape:cx="33"
+     inkscape:cy="33"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,7 +34,9 @@
      inkscape:window-height="1052"
      inkscape:window-x="0"
      inkscape:window-y="28"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="true"
+     showguides="false" />
   <defs
      id="defs3680">
     <linearGradient
@@ -48,17 +50,31 @@
     <marker
        inkscape:stockid="Arrow1Lstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lstart"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path4509"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5736"
+       x="-0.5"
+       width="2"
+       y="-0.5"
+       height="2">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="6.21"
+         id="feGaussianBlur5738" />
+    </filter>
   </defs>
   <metadata
      id="metadata3683">
@@ -73,20 +89,27 @@
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="bg"
+     transform="translate(0,-231)" />
+  <g
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="レイヤー 1">
+     inkscape:label="レイヤー 1"
+     transform="translate(0,-231)">
     <circle
-       id="path3702"
-       cx="16"
-       cy="16"
-       style="fill:#000000;fill-opacity:0.53333285;stroke:none;stroke-width:22.7840023;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.53333285;paint-order:normal"
-       r="15.60061" />
+       style="opacity:1;fill:#f8f8f8;fill-opacity:1;stroke:none;stroke-width:9;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="path995"
+       cx="33"
+       cy="264"
+       r="16.255976" />
     <circle
-       id="circle8539"
-       cx="16"
-       cy="16"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12.24565411;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       r="14.347956" />
+       r="16.255976"
+       cy="264"
+       cx="33"
+       id="circle1010"
+       style="opacity:1;fill:none;fill-opacity:0.31629393;stroke:#ffffff;stroke-width:10.62233543;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)"
+       transform="matrix(0.84727128,0,0,0.84727128,5.0400478,40.320382)" />
   </g>
 </svg>
