@@ -1,11 +1,6 @@
 # Fonts
-## RE:0 Scripts (Maybe revive this in the future?)
-- RE:0 Imoji 1.1.1
-- Rozerofo 1.3
-- Genjyuu Gothic
 
-## English
-- Genjyuu Gothic
+Grades: Genjyuu Gothic
+Other: JK Gothic L/M -> Noto Sans CJK Light/Medium (fallback)
 
-## Mandarin & Japanese
-- Genjyuu Gothic
+(Japanese Welcome uses Noto Sans CJK)
