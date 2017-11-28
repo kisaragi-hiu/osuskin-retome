@@ -5,3 +5,4 @@ override/
 src/*.png
 *.swp
 .directory
+fonts/
