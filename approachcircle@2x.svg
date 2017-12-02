@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="203.42154"
+     inkscape:cx="73.67154"
      inkscape:cy="138.23285"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -79,9 +79,9 @@
      inkscape:label="レイヤー 1">
     <circle
        id="circle8539"
-       cx="128.07198"
-       cy="127.92803"
-       style="fill:#ffffff;fill-opacity:0.23167156;stroke:#ffffff;stroke-width:2.459;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       r="125.07063" />
+       cx="128"
+       cy="128"
+       style="fill:#707070;fill-opacity:0.23167156;stroke:#ffffff;stroke-width:7;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       r="121.5" />
   </g>
 </svg>
