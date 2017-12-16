@@ -26,8 +26,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9999999"
-     inkscape:cx="1.4975446"
-     inkscape:cy="25.28571"
+     inkscape:cx="13.372545"
+     inkscape:cy="33.91071"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,13 +43,13 @@
        inkscape:collect="always"
        id="linearGradient888">
       <stop
-         style="stop-color:#ff8b8b;stop-opacity:1"
+         style="stop-color:#c48bff;stop-opacity:1"
          offset="0"
          id="stop884" />
       <stop
          id="stop892"
          offset="0.51838237"
-         style="stop-color:#ff8b8b;stop-opacity:1" />
+         style="stop-color:#c48bff;stop-opacity:1" />
       <stop
          style="stop-color:#ffffff;stop-opacity:0.99356914"
          offset="0.75000006"
@@ -111,7 +111,7 @@
      inkscape:label="レイヤー 1"
      transform="translate(0,4)">
     <circle
-       style="opacity:1;fill:#ff8b8b;fill-opacity:1;stroke:url(#radialGradient890);stroke-width:16;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       style="opacity:1;fill:#c48bff;fill-opacity:1;stroke:url(#radialGradient890);stroke-width:16;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        id="path841"
        cx="34"
        cy="30"
