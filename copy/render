@@ -1,0 +1,19 @@
+#!/bin/bash
+cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+mkdir -p tocopy
+rm -r ./tocopy/*
+
+list_rendered () {
+  printf "["
+  for i in $1; do
+    printf \"
+    printf "%s" "$i" # SC2059. filenames could contain '%' which would be parsed
+    printf \"
+    printf ","
+  done | sed s/,$// | # remove trailing comma
+         sed /rendered_files/d # rendered_files should NOT be copied
+  printf ']\n' # single quote so \n is parsed by printf not bash
+}
+
+find ./* -not -name "rendered_files" -not -regex '.*tocopy.*' -exec cp {} tocopy/ \;
+list_rendered "$(find tocopy/)" > rendered-files

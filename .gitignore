@@ -6,3 +6,5 @@ src/*.png
 *.swp
 .directory
 fonts/
+.cache
+rendered-files

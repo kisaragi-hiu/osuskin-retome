@@ -1,0 +1,46 @@
+#!/bin/bash
+read -r -d '' empties <<'EOF'
+count1.png
+count2.png
+count3.png
+hit300-0.png
+hit300g-0.png
+hit300k-0.png
+inputoverlay-background.png
+lighting.png
+ranking-graph.png
+scorebar-bg.png
+sliderendcircle.png
+sliderpoint10.png
+sliderpoint30.png
+sliderscorepoint.png
+spinner-approachcircle.png
+spinner-clear.png
+spinner-glow.png
+spinner-middle.png
+star2.png
+EOF
+
+cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+
+list_rendered () {
+  printf "["
+  for i in $1; do
+    printf \"
+    printf "%s" "$i" # SC2059. filenames could contain '%' which would be parsed
+    printf \"
+    printf ","
+  done | sed s/,$// # remove trailing comma
+  printf ']\n' # single quote so \n is parsed by printf not bash
+}
+
+render_empty () {
+  ext=${1##*.} # '##'->greedy front trim. => greedily trim from beginning matching all until '.'
+  cp empty."$ext" "$1"
+}
+
+for i in $empties; do
+  render_empty "$i"
+done
+
+list_rendered "$empties" > rendered-files
