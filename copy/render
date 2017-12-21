@@ -15,5 +15,6 @@ list_rendered () {
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
-find ./* -not -name "rendered_files" -not -regex '.*tocopy.*' -exec cp {} tocopy/ \;
-list_rendered "$(find tocopy/)" > rendered-files
+find ./* -not -name "rendered-files" \
+         -not -regex '.*tocopy.*' -exec cp {} tocopy/ \;
+list_rendered "$(find tocopy/*)" > rendered-files
