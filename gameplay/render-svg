@@ -1,0 +1,13 @@
+#!/bin/bash
+# render all svg files
+cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+
+find ./*.svg || exit 1
+
+svg2png () {
+  inkscape -z "$1" -e "${1%.*}".png
+}
+
+for i in *.svg; do
+  svg2png "$i"
+done

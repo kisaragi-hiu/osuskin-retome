@@ -1,0 +1,38 @@
+#!/bin/bash
+# render all .rendermarker.blends
+
+cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+
+find ./*.rendermarker.blend || exit 1
+
+read -r -d '' render_marker <<'PYTHON'
+# by p2or on Blender StackExchange
+# https://blender.stackexchange.com/questions/23121
+import bpy
+import os
+
+# get the scene
+scn = bpy.context.scene
+
+# get the output path
+output_path = scn.render.filepath
+
+# iterate through markers and render
+for k, m in scn.timeline_markers.items():
+    frame = m.frame
+    marker_name = m.name
+    scn.frame_set(frame)
+    scn.render.filepath = os.path.join(output_path, marker_name + ".jpg")
+    bpy.ops.render.render( write_still=True )
+
+bpy.context.scene.render.filepath = output_path
+PYTHON
+
+render_blender_marker () {
+    echo "render_blender_marker: $1"
+    blender -b "$1" --python <(echo "$render_marker") >/dev/null 2>/dev/null
+}
+
+for i in *.rendermarker.blend; do
+  render_blender_marker "$i"
+done

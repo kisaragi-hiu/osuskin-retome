@@ -1,0 +1,14 @@
+#!/bin/bash
+# render all .rendernormal.blends
+cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+
+find ./*.rendernormal.blend || exit 1
+
+render_blender () {
+  echoreport rendering "$1"...
+  blender -b "$1" -a >/dev/null
+}
+
+for i in *.rendernormal.blend; do
+  render_blender "$i"
+done
