@@ -61,7 +61,8 @@ list_rendered () {
     printf "%s" "$i" # SC2059. filenames could contain '%' which would be parsed
     printf \"
     printf ","
-  done | sed s/,$// # remove trailing comma
+  done
+  printf "\"Default Numbers\"" # special case in this folder
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
