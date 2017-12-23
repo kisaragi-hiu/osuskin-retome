@@ -1,7 +1,7 @@
 #!/bin/bash
 cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
 mkdir -p tocopy
-rm -r ./tocopy/*
+find ./tocopy/* >/dev/null 2>/dev/null && rm -r ./tocopy/*
 
 list_rendered () {
   printf "["
