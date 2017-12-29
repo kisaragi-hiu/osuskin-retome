@@ -11,9 +11,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="68"
-   height="68"
-   viewBox="0 0 68 68"
+   width="80"
+   height="80"
+   viewBox="0 0 80 80"
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9999999"
-     inkscape:cx="13.372545"
-     inkscape:cy="33.91071"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="39.635027"
+     inkscape:cy="38.105535"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,11 +48,15 @@
          id="stop884" />
       <stop
          id="stop892"
-         offset="0.51838237"
+         offset="0.65981108"
          style="stop-color:#c48bff;stop-opacity:1" />
       <stop
+         style="stop-color:#ffffff;stop-opacity:0.99215686"
+         offset="0.69044286"
+         id="stop846" />
+      <stop
          style="stop-color:#ffffff;stop-opacity:0.99356914"
-         offset="0.75000006"
+         offset="0.79447675"
          id="stop894" />
       <stop
          style="stop-color:#ffffff;stop-opacity:0;"
@@ -86,12 +90,13 @@
        inkscape:collect="always"
        xlink:href="#linearGradient888"
        id="radialGradient890"
-       cx="34"
-       cy="30"
-       fx="34"
-       fy="30"
+       cx="39.83363"
+       cy="35.656853"
+       fx="39.83363"
+       fy="35.656853"
        r="34"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1718785,-0.01637369,0.01621925,1.1608244,-7.42487,-17.08227)" />
   </defs>
   <metadata
      id="metadata3683">
@@ -101,7 +106,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -109,12 +114,12 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="レイヤー 1"
-     transform="translate(0,4)">
+     transform="translate(0,16)">
     <circle
        style="opacity:1;fill:#c48bff;fill-opacity:1;stroke:url(#radialGradient890);stroke-width:16;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        id="path841"
-       cx="34"
-       cy="30"
-       r="26" />
+       cx="40"
+       cy="24"
+       r="32" />
   </g>
 </svg>

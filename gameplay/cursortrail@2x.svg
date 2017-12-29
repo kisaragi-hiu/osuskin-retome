@@ -11,9 +11,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="60"
-   height="60"
-   viewBox="0 0 60 60"
+   width="65"
+   height="65"
+   viewBox="0 0 65 65"
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9999999"
-     inkscape:cx="40.622545"
-     inkscape:cy="23.03571"
+     inkscape:zoom="16"
+     inkscape:cx="24.496385"
+     inkscape:cy="25.911346"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -47,8 +47,12 @@
          offset="0"
          id="stop862" />
       <stop
+         id="stop834"
+         offset="0.26763982"
+         style="stop-color:#af71ee;stop-opacity:1;" />
+      <stop
          id="stop870"
-         offset="0.61153227"
+         offset="0.56874621"
          style="stop-color:#c48bff;stop-opacity:1" />
       <stop
          style="stop-color:#c48bff;stop-opacity:0"
@@ -82,13 +86,13 @@
        inkscape:collect="always"
        xlink:href="#linearGradient866"
        id="radialGradient868"
-       cx="30"
-       cy="34"
-       fx="30"
-       fy="34"
+       cx="31.37253"
+       cy="35.424671"
+       fx="31.37253"
+       fy="35.424671"
        r="16.050001"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.778497,-0.04101874,0.04138335,1.7943062,-24.761942,-25.77585)" />
+       gradientTransform="matrix(2.0044103,-0.02963066,0.02975179,2.0126053,-31.437369,-38.866295)" />
   </defs>
   <metadata
      id="metadata3683">
@@ -98,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -106,12 +110,12 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="レイヤー 1"
-     transform="translate(0,-4)">
+     transform="translate(0,1)">
     <circle
-       style="opacity:1;fill:#ac6dec;fill-opacity:1;stroke:url(#radialGradient868);stroke-width:27.9;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       style="opacity:1;fill:#ac6dec;fill-opacity:1;stroke:url(#radialGradient868);stroke-width:27.89999962;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        id="path841"
-       cy="34"
-       cx="30"
-       r="16.050001" />
+       cy="31.5"
+       cx="32.5"
+       r="18.550001" />
   </g>
 </svg>
