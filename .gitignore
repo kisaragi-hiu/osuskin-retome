@@ -8,3 +8,4 @@ src/*.png
 fonts/
 .cache
 rendered-files
+.out
