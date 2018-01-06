@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="63.993554"
-     inkscape:cy="124.91256"
+     inkscape:zoom="2.0602928"
+     inkscape:cx="158.57718"
+     inkscape:cy="111.82316"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -98,6 +98,13 @@
      inkscape:label="レイヤー 1"
      transform="translate(0,-7)">
     <circle
+       style="fill:none;fill-opacity:0.19607843;stroke:#000000;stroke-width:19.33766937;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)"
+       r="114.65957"
+       cy="143.91362"
+       cx="148.5"
+       id="circle8537-3"
+       transform="matrix(0.97638597,0,0,0.97638327,0.01353056,11.166262)" />
+    <circle
        style="opacity:1;fill:#000000;fill-opacity:0.13333333;stroke:none;stroke-width:27.8999958;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.99215686;paint-order:normal"
        id="path827"
        cx="145"
@@ -110,12 +117,5 @@
        id="circle8537"
        rx="111.94516"
        ry="112.01369" />
-    <circle
-       style="fill:none;fill-opacity:0.19607843;stroke:#f5f1f9;stroke-width:19.33291054;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)"
-       r="114.65957"
-       cy="143.91362"
-       cx="148.5"
-       id="circle8537-3"
-       transform="matrix(0.97632625,0,0,0.97692399,0.01555188,6.9267857)" />
   </g>
 </svg>
