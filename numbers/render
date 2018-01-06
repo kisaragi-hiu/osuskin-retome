@@ -26,12 +26,12 @@ bpy.context.scene.render.filepath = output_path
 PYTHON
 
 svg2png () {
-  inkscape -z "$1" -e "${1%.*}".png
+  inkscape -z "$1" -e "${1%.*}".png >/dev/null 2>/dev/null
 }
 
 render_blender () {
   echo "render_blender: $1"...
-  blender -b "$1" -a >/dev/null
+  blender -b "$1" -a >/dev/null 2>/dev/null
 }
 
 render_blender_marker () {
