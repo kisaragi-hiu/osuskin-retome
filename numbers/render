@@ -62,7 +62,7 @@ list_rendered () {
     printf \"
     printf ","
   done
-  printf "\"numbers/\""
+  printf "\"numbers\""
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
