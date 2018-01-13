@@ -66,4 +66,6 @@ list_rendered () {
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
+cp numbers/dot/*.png ./ # Use dot numbers by default
+
 list_rendered > rendered-files
