@@ -2,7 +2,7 @@
 
 cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
 
-read -r -d '' render_marker <<'PYTHON'
+read -r -d '' render_marker <<'EOF'
 # by p2or on Blender StackExchange
 # https://blender.stackexchange.com/questions/23121
 import bpy
@@ -23,7 +23,7 @@ for k, m in scn.timeline_markers.items():
     bpy.ops.render.render( write_still=True )
 
 bpy.context.scene.render.filepath = output_path
-PYTHON
+EOF
 
 svg2png () {
   inkscape -z "$1" -e "${1%.*}".png >/dev/null 2>/dev/null
@@ -62,7 +62,7 @@ list_rendered () {
     printf \"
     printf ","
   done
-  printf "\"Default Numbers\"" # special case in this folder
+  printf "\"numbers/\""
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
