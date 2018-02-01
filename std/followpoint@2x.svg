@@ -2,7 +2,6 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,13 +10,88 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="120"
+   width="200"
    height="12"
-   viewBox="0 0 120 12"
+   viewBox="0 0 52.916665 3.1750001"
    version="1.1"
-   id="SVGRoot"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="followpoint-0@2x.svg">
+   id="svg4681"
+   sodipodi:docname="followpoint@2x.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <defs
+     id="defs4675">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5285">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop5281" />
+      <stop
+         id="stop5289"
+         offset="0.53214294"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop5283" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5262">
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0"
+         id="stop5258" />
+      <stop
+         id="stop5294"
+         offset="0.15624997"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         id="stop5266"
+         offset="0.51785713"
+         style="stop-color:#ffffff;stop-opacity:0.95046437" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0.80714285"
+         id="stop5292" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop5260" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5285"
+       id="radialGradient5287"
+       cx="26.458333"
+       cy="295.41248"
+       fx="26.458333"
+       fy="295.41248"
+       r="26.458332"
+       gradientTransform="matrix(1,0,0,0.06,0,277.68773)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5262"
+       id="linearGradient5356"
+       gradientUnits="userSpaceOnUse"
+       x1="1.2715658e-06"
+       y1="295.41248"
+       x2="52.916665"
+       y2="295.41248"
+       gradientTransform="translate(0,2.5e-6)" />
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask5352">
+      <rect
+         y="293.82498"
+         x="1.2715658e-06"
+         height="3.175"
+         width="52.916664"
+         id="rect5354"
+         style="opacity:1;fill:url(#linearGradient5356);fill-opacity:1;stroke:none;stroke-width:4.99559784;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    </mask>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,73 +99,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.951049"
-     inkscape:cx="82.348647"
-     inkscape:cy="-14.70458"
-     inkscape:document-units="px"
+     inkscape:zoom="5.6"
+     inkscape:cx="87.53534"
+     inkscape:cy="-3.2409426"
+     inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
      inkscape:window-width="1920"
      inkscape:window-height="1018"
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="true" />
-  <defs
-     id="defs3680">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4576">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0.99380803"
-         offset="0"
-         id="stop4572" />
-      <stop
-         id="stop4580"
-         offset="0.60791224"
-         style="stop-color:#ffffff;stop-opacity:0.51372549;" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0"
-         offset="1"
-         id="stop4574" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient6995"
-       osb:paint="solid">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop6993" />
-    </linearGradient>
-    <marker
-       inkscape:stockid="Arrow1Lstart"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow1Lstart"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         id="path4509"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         transform="matrix(0.8,0,0,0.8,10,0)"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4576"
-       id="radialGradient4594"
-       cx="-60"
-       cy="-6"
-       fx="-60"
-       fy="-6"
-       r="60"
-       gradientTransform="matrix(1,0,0,0.1,0,-5.4)"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     inkscape:lockguides="false" />
   <metadata
-     id="metadata3683">
+     id="metadata4678">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -103,16 +126,17 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     inkscape:label="レイヤー 1"
      inkscape:groupmode="layer"
-     inkscape:label="レイヤー 1">
+     id="layer1"
+     transform="translate(0,-293.82498)">
     <rect
-       style="opacity:1;fill:url(#radialGradient4594);fill-opacity:1;stroke:none;stroke-width:18.88100052;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       id="rect4538"
-       width="120"
-       height="12"
-       x="-120"
-       y="-12"
-       transform="scale(-1)" />
+       style="opacity:1;fill:url(#radialGradient5287);fill-opacity:1;stroke:none;stroke-width:4.99559784;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect5245"
+       width="52.916664"
+       height="3.175"
+       x="1.2715658e-06"
+       y="293.82498"
+       mask="url(#mask5352)" />
   </g>
 </svg>
