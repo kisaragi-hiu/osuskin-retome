@@ -39,9 +39,22 @@ render_blender_marker () {
   blender -b "$1" --python <(echo "$render_marker") 2>/dev/null >/dev/null
 }; export -f render_blender_marker
 
-find ./* -name "*.svg" -exec bash -c 'svg2png "$0"' {} \;
-find ./* -name "*.rendernormal.blend" -exec bash -c 'render_blender "$0"' {} \;
-find ./* -name "*.rendermarker.blend" -exec bash -c 'render_blender_marker "$0"' {} \;
+for i in *.svg; do
+    find ./$i >/dev/null 2>/dev/null || break
+    svg2png "$i"
+done
+for i in *.rendernormal.blend; do
+    find ./$i >/dev/null 2>/dev/null || break
+    render_blender "$i"
+done
+for i in *.rendermarker.blend; do
+    find ./$i >/dev/null 2>/dev/null || break
+    render_blender_marker "$i"
+done
+
+# find ./* -name "*.svg" -exec bash -c 'svg2png "$0"' {} \;
+# find ./* -name "*.rendernormal.blend" -exec bash -c 'render_blender "$0"' {} \;
+# find ./* -name "*.rendermarker.blend" -exec bash -c 'render_blender_marker "$0"' {} \;
 
 list_rendered () {
   printf "["
