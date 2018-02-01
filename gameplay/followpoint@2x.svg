@@ -8,11 +8,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="180"
+   width="120"
    height="12"
-   viewBox="0 0 180 12"
+   viewBox="0 0 120 12"
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -24,20 +25,36 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.9755245"
-     inkscape:cx="55.759051"
-     inkscape:cy="-15.327778"
+     inkscape:zoom="5.951049"
+     inkscape:cx="82.348647"
+     inkscape:cy="-14.70458"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1052"
+     inkscape:window-height="1018"
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true" />
   <defs
      id="defs3680">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4576">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.99380803"
+         offset="0"
+         id="stop4572" />
+      <stop
+         id="stop4580"
+         offset="0.60791224"
+         style="stop-color:#ffffff;stop-opacity:0.51372549;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1"
+         id="stop4574" />
+    </linearGradient>
     <linearGradient
        id="linearGradient6995"
        osb:paint="solid">
@@ -61,19 +78,17 @@
          transform="matrix(0.8,0,0,0.8,10,0)"
          inkscape:connector-curvature="0" />
     </marker>
-    <filter
+    <radialGradient
        inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter4814"
-       x="-0.011063105"
-       width="1.0221262"
-       y="-0.45412117"
-       height="1.9082423">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.0956263"
-         id="feGaussianBlur4816" />
-    </filter>
+       xlink:href="#linearGradient4576"
+       id="radialGradient4594"
+       cx="-60"
+       cy="-6"
+       fx="-60"
+       fy="-6"
+       r="60"
+       gradientTransform="matrix(1,0,0,0.1,0,-5.4)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata3683">
@@ -83,7 +98,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -91,13 +106,13 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="レイヤー 1">
-    <ellipse
-       id="circle8539"
-       cx="128"
-       cy="6"
-       style="fill:#d7d7d7;fill-opacity:1;stroke:none;stroke-width:14.31290531;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667;paint-order:normal;filter:url(#filter4814)"
-       rx="118.8411"
-       ry="2.8951559"
-       transform="matrix(0.74064573,0,0,1,-4.8026523,0)" />
+    <rect
+       style="opacity:1;fill:url(#radialGradient4594);fill-opacity:1;stroke:none;stroke-width:18.88100052;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect4538"
+       width="120"
+       height="12"
+       x="-120"
+       y="-12"
+       transform="scale(-1)" />
   </g>
 </svg>
