@@ -27,32 +27,21 @@ PYTHON
 
 svg2png () {
   inkscape -z "$1" -e "${1%.*}".png 2>/dev/null >/dev/null
-}
+}; export -f svg2png
 
 render_blender () {
   echo "render_blender: $1"...
   blender -b "$1" -a 2>/dev/null >/dev/null
-}
+}; export -f render_blender
 
 render_blender_marker () {
-    echo "render_blender_marker: $1"
-    blender -b "$1" --python <(echo "$render_marker") 2>/dev/null >/dev/null
-}
+  echo "render_blender_marker: $1"
+  blender -b "$1" --python <(echo "$render_marker") 2>/dev/null >/dev/null
+}; export -f render_blender_marker
 
-for i in *.svg; do
-  find "$i" 2>/dev/null || break
-  svg2png "$i"
-done
-
-for i in *.rendernormal.blend; do
-  find "$i" 2>/dev/null || break
-  render_blender "$i"
-done
-
-for i in *.rendermarker.blend; do
-  find "$i" 2>/dev/null || break
-  render_blender_marker "$i"
-done
+find ./* -name "*.svg" -exec bash -c 'svg2png "$0"' {} \;
+find ./* -name "*.rendernormal.blend" -exec bash -c 'render_blender "$0"' {} \;
+find ./* -name "*.rendermarker.blend" -exec bash -c 'render_blender_marker "$0"' {} \;
 
 list_rendered () {
   printf "["
