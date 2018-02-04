@@ -1,1 +1,35 @@
-../render-svg-blender-and-marker
+#!/bin/bash
+
+cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+
+source _common/convert.bash
+
+for i in *.svg; do
+    find ./$i >/dev/null 2>/dev/null || break
+    svg2png "$i"
+done
+for i in *.rendernormal.blend; do
+    find ./$i >/dev/null 2>/dev/null || break
+    render_blender "$i"
+done
+for i in *.rendermarker.blend; do
+    find ./$i >/dev/null 2>/dev/null || break
+    render_blender_marker "$i"
+done
+
+# find ./* -name "*.svg" -exec bash -c 'svg2png "$0"' {} \;
+# find ./* -name "*.rendernormal.blend" -exec bash -c 'render_blender "$0"' {} \;
+# find ./* -name "*.rendermarker.blend" -exec bash -c 'render_blender_marker "$0"' {} \;
+
+list_rendered () {
+  printf "["
+  for i in *.png; do
+    printf \"
+    printf "%s" "$i" # SC2059. filenames could contain '%' which would be parsed
+    printf \"
+    printf ","
+  done | sed s/,$// # remove trailing comma
+  printf ']\n' # single quote so \n is parsed by printf not bash
+}
+
+list_rendered > rendered-files

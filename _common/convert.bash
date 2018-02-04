@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
-
 read -r -d '' render_marker <<'PYTHON'
 # by p2or on Blender StackExchange
 # https://blender.stackexchange.com/questions/23121
@@ -29,6 +27,10 @@ svg2png () {
   inkscape -z "$1" -e "${1%.*}".png 2>/dev/null >/dev/null
 }; export -f svg2png
 
+mmpz2wav () {
+  lmms --format wav --render "$1" >/dev/null 2>/dev/null
+}; export -f mmpz2wav
+
 render_blender () {
   echo "render_blender: $1"...
   blender -b "$1" -a 2>/dev/null >/dev/null
@@ -38,33 +40,3 @@ render_blender_marker () {
   echo "render_blender_marker: $1"
   blender -b "$1" --python <(echo "$render_marker") 2>/dev/null >/dev/null
 }; export -f render_blender_marker
-
-for i in *.svg; do
-    find ./$i >/dev/null 2>/dev/null || break
-    svg2png "$i"
-done
-for i in *.rendernormal.blend; do
-    find ./$i >/dev/null 2>/dev/null || break
-    render_blender "$i"
-done
-for i in *.rendermarker.blend; do
-    find ./$i >/dev/null 2>/dev/null || break
-    render_blender_marker "$i"
-done
-
-# find ./* -name "*.svg" -exec bash -c 'svg2png "$0"' {} \;
-# find ./* -name "*.rendernormal.blend" -exec bash -c 'render_blender "$0"' {} \;
-# find ./* -name "*.rendermarker.blend" -exec bash -c 'render_blender_marker "$0"' {} \;
-
-list_rendered () {
-  printf "["
-  for i in *.png; do
-    printf \"
-    printf "%s" "$i" # SC2059. filenames could contain '%' which would be parsed
-    printf \"
-    printf ","
-  done | sed s/,$// # remove trailing comma
-  printf ']\n' # single quote so \n is parsed by printf not bash
-}
-
-list_rendered > rendered-files
