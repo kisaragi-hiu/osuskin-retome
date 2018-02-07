@@ -1,43 +1,8 @@
 #!/bin/bash
 
-cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
-read -r -d '' render_marker <<'EOF'
-# by p2or on Blender StackExchange
-# https://blender.stackexchange.com/questions/23121
-import bpy
-import os
-
-# get the scene
-scn = bpy.context.scene
-
-# get the output path
-output_path = scn.render.filepath
-
-# iterate through markers and render
-for k, m in scn.timeline_markers.items():
-    frame = m.frame
-    marker_name = m.name
-    scn.frame_set(frame)
-    scn.render.filepath = os.path.join(output_path, marker_name + ".jpg")
-    bpy.ops.render.render( write_still=True )
-
-bpy.context.scene.render.filepath = output_path
-EOF
-
-svg2png () {
-  inkscape -z "$1" -e "${1%.*}".png >/dev/null 2>/dev/null
-}
-
-render_blender () {
-  echo "render_blender: $1"...
-  blender -b "$1" -a >/dev/null 2>/dev/null
-}
-
-render_blender_marker () {
-    echo "render_blender_marker: $1"
-    blender -b "$1" --python <(echo "$render_marker") >/dev/null 2>/dev/null
-}
+source _common/convert.bash
 
 for i in *.svg; do
   find "$i" 2>/dev/null || break
@@ -62,10 +27,15 @@ list_rendered () {
     printf \"
     printf ","
   done
-  printf "\"numbers\""
+  printf "\"numbers\","
+  printf "\"skin.ini\""
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
-cp numbers/dot/*.png ./ # Use dot numbers by default
+for i in dot jisz genjyuu; do
+  cp $i.skin.ini numbers/$i/skin.ini
+done
+
+cp numbers/dot/* ./ # Use dot numbers by default
 
 list_rendered > to-move
