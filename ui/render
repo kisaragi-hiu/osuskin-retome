@@ -32,4 +32,4 @@ list_rendered () {
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
-list_rendered > rendered-files
+list_rendered > to-move

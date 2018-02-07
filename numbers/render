@@ -68,4 +68,4 @@ list_rendered () {
 
 cp numbers/dot/*.png ./ # Use dot numbers by default
 
-list_rendered > rendered-files
+list_rendered > to-move

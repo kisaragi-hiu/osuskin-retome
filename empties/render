@@ -43,4 +43,4 @@ for i in $empties; do
   render_empty "$i"
 done
 
-list_rendered "$empties" > rendered-files
+list_rendered "$empties" > to-move
