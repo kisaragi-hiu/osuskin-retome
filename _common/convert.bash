@@ -31,6 +31,10 @@ mmpz2wav () {
   lmms --format wav --render "$1" >/dev/null 2>/dev/null
 }; export -f mmpz2wav
 
+kra2png () {
+  krita --export --export-filename "${1%.*}".png "$1" 2>/dev/null >/dev/null
+}; export -f kra2png
+
 render_blender () {
   echo "render_blender: $1"...
   blender -b "$1" -a 2>/dev/null >/dev/null
