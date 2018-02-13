@@ -25,7 +25,7 @@ nightcore-hat.wav
 nightcore-finish.wav
 EOF
 
-cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
 list_rendered () {
   printf "["

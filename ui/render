@@ -1,19 +1,19 @@
 #!/bin/bash
 
-cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
 source _common/convert.bash
 
 for i in *.svg; do
-    find ./$i >/dev/null 2>/dev/null || break
+    find ./"$i" >/dev/null 2>/dev/null || break
     svg2png "$i"
 done
 for i in *.rendernormal.blend; do
-    find ./$i >/dev/null 2>/dev/null || break
+    find ./"$i" >/dev/null 2>/dev/null || break
     render_blender "$i"
 done
 for i in *.rendermarker.blend; do
-    find ./$i >/dev/null 2>/dev/null || break
+    find ./"$i" >/dev/null 2>/dev/null || break
     render_blender_marker "$i"
 done
 

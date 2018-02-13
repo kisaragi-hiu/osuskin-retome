@@ -3,7 +3,7 @@
 # in a xml file called to-move
 
 # this file should be run in context of where it's located
-cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
 for i in *.mmpz; do
   mmpz2wav "$i"
