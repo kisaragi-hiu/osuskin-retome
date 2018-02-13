@@ -19,6 +19,10 @@ spinner-clear.png
 spinner-glow.png
 spinner-middle.png
 star2.png
+nightcore-kick.wav
+nightcore-clap.wav
+nightcore-hat.wav
+nightcore-finish.wav
 EOF
 
 cd "$(dirname ${BASH_SOURCE[0]})" || exit 1
