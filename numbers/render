@@ -36,6 +36,6 @@ for i in dot genjyuu jkgothic; do
   cp $i.skin.ini numbers/$i/skin.ini
 done
 
-cp numbers/dot/* ./ # Use dot numbers by default
+cp numbers/jkgothic/* ./ # Use jkgothic numbers by default
 
 list_rendered > to-move
