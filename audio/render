@@ -5,6 +5,8 @@
 # this file should be run in context of where it's located
 cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
+source _common/convert.bash
+
 for i in *.mmpz; do
   mmpz2wav "$i"
 done
