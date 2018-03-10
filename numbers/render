@@ -32,7 +32,7 @@ list_rendered () {
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
-for i in dot genjyuu jkgothic; do
+for i in dot jkgothic; do
   cp $i.skin.ini numbers/$i/skin.ini
 done
 
