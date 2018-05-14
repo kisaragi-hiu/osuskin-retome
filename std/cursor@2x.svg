@@ -16,7 +16,7 @@
    viewBox="0 0 80 80"
    version="1.1"
    id="SVGRoot"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
    sodipodi:docname="cursor@2x.svg">
   <sodipodi:namedview
      id="base"
@@ -26,30 +26,46 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568542"
-     inkscape:cx="19.836037"
-     inkscape:cy="41.287515"
+     inkscape:cx="-1.3197792"
+     inkscape:cy="22.890365"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1018"
+     inkscape:window-height="1050"
      inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-y="29"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true" />
   <defs
      id="defs3680">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient911">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop907" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop909" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient888">
       <stop
-         style="stop-color:#ffffff;stop-opacity:1"
+         style="stop-color:#ffffff;stop-opacity:0.03293413"
          offset="0"
          id="stop884" />
       <stop
          id="stop892"
-         offset="0.18042737"
-         style="stop-color:#ffffff;stop-opacity:1" />
+         offset="0.14813317"
+         style="stop-color:#ffffff;stop-opacity:0.08682635" />
+      <stop
+         style="stop-color:#f7efff;stop-opacity:0.22155689"
+         offset="0.49957651"
+         id="stop836" />
       <stop
          style="stop-color:#c48bff;stop-opacity:1"
          offset="0.79447675"
@@ -97,6 +113,28 @@
        r="34"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.1718785,-0.01637369,0.01621925,1.1608244,-7.42487,-17.08227)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient911"
+       id="radialGradient921"
+       cx="40"
+       cy="23.999998"
+       fx="40"
+       fy="23.999998"
+       r="21.1005"
+       gradientTransform="matrix(1,0,0,0.09935785,0,21.615411)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient911"
+       id="radialGradient949"
+       cx="24"
+       cy="-40"
+       fx="24"
+       fy="-40"
+       r="21.1005"
+       gradientTransform="matrix(1,0,0,0.09935785,0,-36.025687)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata3683">
@@ -116,10 +154,25 @@
      inkscape:label="レイヤー 1"
      transform="translate(0,16)">
     <circle
-       style="opacity:1;fill:#fcf9ff;fill-opacity:1;stroke:url(#radialGradient890);stroke-width:60;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       style="opacity:1;fill:#fcf9ff;fill-opacity:0.26666668;stroke:url(#radialGradient890);stroke-width:60;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        id="path841"
        cx="40"
        cy="24"
        r="32" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.97904196;stroke:url(#radialGradient921);stroke-width:4.1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect838"
+       width="38.101002"
+       height="0.093000956"
+       x="20.949499"
+       y="23.953499" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.97904196;stroke:url(#radialGradient949);stroke-width:4.0999999;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect838-3"
+       width="38.101002"
+       height="0.093000956"
+       x="4.9494991"
+       y="-40.046501"
+       transform="rotate(90)" />
   </g>
 </svg>
