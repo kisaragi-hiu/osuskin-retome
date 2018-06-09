@@ -32,9 +32,8 @@ list_rendered () {
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
-for i in dot jkgothic; do
-  cp $i.skin.ini numbers/$i/skin.ini
-done
+sed s/◊hit-overlap◊/10/ template.skin.ini > numbers/jkgothic/skin.ini
+sed s/◊hit-overlap◊/128/ template.skin.ini > numbers/dot/skin.ini
 
 cp numbers/jkgothic/* ./ # Use jkgothic numbers by default
 
