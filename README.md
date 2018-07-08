@@ -8,6 +8,16 @@ https://forum.gamer.com.tw/C.php?bsn=18601&snA=7113&subbsn=8&page=1&gothis=22200
 
 https://osu.ppy.sh/community/forums/topics/630525?start=6195149
 
+## Building
+
+This skin is built with [mkosuskin](//gitlab.com/kisaragi-hiu/mkosuskin). Put this skin under that repository, then run
+
+```bash
+racket mkosuskin.rkt -m ja -m external -r dev
+```
+
+to render the Japanese version with external assets as the "dev" release.
+
 ## License
 
 [![image](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/)
