@@ -16,7 +16,7 @@
    viewBox="0 0 65 65"
    version="1.1"
    id="SVGRoot"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
    sodipodi:docname="cursortrail@2x.svg">
   <sodipodi:namedview
      id="base"
@@ -25,16 +25,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="24.496385"
-     inkscape:cy="25.911346"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="6.7478742"
+     inkscape:cy="21.502514"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1052"
+     inkscape:window-height="1021"
      inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true" />
   <defs
@@ -43,19 +43,19 @@
        inkscape:collect="always"
        id="linearGradient866">
       <stop
-         style="stop-color:#a868e8;stop-opacity:1"
+         style="stop-color:#e86868;stop-opacity:1"
          offset="0"
          id="stop862" />
       <stop
          id="stop834"
          offset="0.26763982"
-         style="stop-color:#af71ee;stop-opacity:1;" />
+         style="stop-color:#ee7175;stop-opacity:1" />
       <stop
          id="stop870"
          offset="0.56874621"
-         style="stop-color:#c48bff;stop-opacity:1" />
+         style="stop-color:#ff8b91;stop-opacity:1" />
       <stop
-         style="stop-color:#c48bff;stop-opacity:0"
+         style="stop-color:#ff8b8d;stop-opacity:0"
          offset="1"
          id="stop864" />
     </linearGradient>
@@ -112,7 +112,7 @@
      inkscape:label="レイヤー 1"
      transform="translate(0,1)">
     <circle
-       style="opacity:1;fill:#ac6dec;fill-opacity:1;stroke:url(#radialGradient868);stroke-width:27.89999962;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       style="opacity:1;fill:#ec6d6f;fill-opacity:1;stroke:url(#radialGradient868);stroke-width:27.9;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        id="path841"
        cy="31.5"
        cx="32.5"
