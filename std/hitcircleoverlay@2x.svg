@@ -15,7 +15,7 @@
    viewBox="0 0 265 265"
    version="1.1"
    id="SVGRoot"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
    sodipodi:docname="hitcircleoverlay@2x.svg">
   <sodipodi:namedview
      id="base"
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.0602928"
-     inkscape:cx="34.152496"
-     inkscape:cy="82.549365"
+     inkscape:cx="71.525825"
+     inkscape:cy="126.23248"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1018"
+     inkscape:window-height="1021"
      inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true" />
   <defs
@@ -83,7 +83,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -98,27 +98,29 @@
      inkscape:label="レイヤー 1"
      transform="translate(0,-32)">
     <g
-       id="g837">
+       id="g837"
+       transform="matrix(0.95544387,0,0,0.95545745,5.9036876,7.3272493)"
+       style="stroke-width:1.04662657">
       <circle
          transform="matrix(0.97638422,0,0,0.97638534,-11.955686,24.522223)"
          id="circle8537-3"
          cx="148.5"
          cy="143.91362"
          r="114.65957"
-         style="fill:none;fill-opacity:0.19607843;stroke:#000000;stroke-width:20.48372774;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)" />
+         style="fill:none;fill-opacity:0.19607843;stroke:#000000;stroke-width:21.43881416;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)" />
       <circle
          r="109.99113"
          cy="164.5"
          cx="132.5"
          id="path827"
-         style="opacity:1;fill:#000000;fill-opacity:0.13333333;stroke:none;stroke-width:27.8999958;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.99215686;paint-order:normal" />
+         style="opacity:1;fill:#000000;fill-opacity:0.13333333;stroke:none;stroke-width:29.20087624;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.99215686;paint-order:normal" />
       <ellipse
          ry="112.01369"
          rx="111.94516"
          id="circle8537"
          cx="132.5"
          cy="164.5"
-         style="fill:none;fill-opacity:0.50196078;stroke:#f5f1f9;stroke-width:19.381;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+         style="fill:none;fill-opacity:0.50196078;stroke:#f5f1f9;stroke-width:20.28466988;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
     </g>
   </g>
 </svg>
