@@ -4,13 +4,11 @@ Kisaragi Hiu's personal skin.
 
 ## Forum posts
 
-https://forum.gamer.com.tw/C.php?bsn=18601&snA=7113&subbsn=8&page=1&gothis=22200#22200
-
 https://osu.ppy.sh/community/forums/topics/630525?start=6195149
 
 ## Building
 
-This skin is built with [mkosuskin](//gitlab.com/kisaragi-hiu/mkosuskin). Put this skin under that repository, then run
+This skin is built with [mkosuskin](//github.com/kisaragi-hiu/mkosuskin). Put this skin under that repository, then run
 
 ```bash
 racket mkosuskin.rkt -m ja -m external -r dev
