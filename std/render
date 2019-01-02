@@ -8,10 +8,6 @@ for i in *.svg; do
     find ./"$i" >/dev/null 2>/dev/null || break
     svg2png "$i"
 done
-for i in *.kra; do
-    find ./"$i" >/dev/null 2>/dev/null || break
-    kra2png "$i"
-done
 for i in *.rendernormal.blend; do
     find ./"$i" >/dev/null 2>/dev/null || break
     render_blender "$i"
