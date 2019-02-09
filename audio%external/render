@@ -1,6 +1,6 @@
 #!/bin/bash
 # render all mmpz files in the current folder and return rendered files
-# in a xml file called to-move
+# in a json file called to-move
 
 # this file should be run in context of where it's located
 cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
