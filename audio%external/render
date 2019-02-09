@@ -5,12 +5,6 @@
 # this file should be run in context of where it's located
 cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
-if test -d osu-resources; then
-    true
-else
-    git clone https://github.com/ppy/osu-resources.git
-fi
-
 cp ./osu-resources/osu.Game.Resources/Samples/Gameplay/*.wav ./
 
 list_rendered () {
