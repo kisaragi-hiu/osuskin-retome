@@ -23,9 +23,7 @@
          "helper.rkt"
          "post-process.rkt")
 
-(define current-project-directory (make-parameter
-                                   (build-path (current-directory)
-                                               "skin.Retome")))
+(define current-project-directory (make-parameter (build-path (current-directory))))
 (define current-revision (make-parameter "dev"))
 (define modules empty)
 (define cache-directory (build-path (current-project-directory) ".cache"))
