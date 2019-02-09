@@ -14,6 +14,21 @@ racket mkosuskin.rkt -m ja -m external -r dev
 
 to render the Japanese version with external assets as the "dev" release.
 
+## Requirements
+
+```
+inkscape
+lmms
+blender
+
+bash
+sed
+
+gm # graphicsmagick
+convert # imagemagick
+vips
+```
+
 ## License
 
 [![image](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/)
