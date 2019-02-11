@@ -14,21 +14,30 @@ racket mkosuskin.rkt -m ja -m external -r dev
 
 to render the Japanese version with external assets as the "dev" release.
 
-## Requirements
+### Requirements
 
-```
-inkscape
-lmms
-blender
+#### Programs
 
-bash
-sed
+- inkscape
+- lmms
+- blender
+- bash
+- sed
+- gm (graphicsmagick)
+- convert (imagemagick)
+- pngquant
+- vips
 
-gm # graphicsmagick
-convert # imagemagick
-pngquant
-vips
-```
+#### Fonts
+
+Download and move fonts to:
+
+- [GenJyuu Gothic Light](http://jikasei.me/font/genjyuu/) → `_common/fonts/GenJyuuGothic-Light.ttf`
+- [KikaiChokokuJIS](http://font.kim/) → `_common/fonts/KikaiChokokuJIS-Md.otf`
+- [JK Gothic M](http://font.cutegirl.jp/jk-font-medium.html) → `_common/fonts/JKG-M_3.ttf`
+- [JK Gothic L](http://font.cutegirl.jp/jk-font-light.html) → `_common/fonts/JKG-L_3.ttf`
+- [Noto Sans CJK Light (OTC)](https://www.google.com/get/noto/help/cjk/) → `_common/fonts/NotoSansCJK-Light.ttc`
+- [Noto Sans CJK Medium (OTC)](https://www.google.com/get/noto/help/cjk/) → `_common/fonts/NotoSansCJK-Medium.ttc`
 
 ## License
 
