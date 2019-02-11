@@ -26,6 +26,7 @@ sed
 
 gm # graphicsmagick
 convert # imagemagick
+pngquant
 vips
 ```
 
