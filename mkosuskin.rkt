@@ -25,6 +25,7 @@
 
 (define current-project-directory (make-parameter (build-path (current-directory))))
 (define current-revision (make-parameter "dev"))
+(define current-skinname (make-parameter "Retome"))
 (define modules empty)
 (define cache-directory (build-path (current-project-directory) ".cache"))
 
@@ -62,6 +63,10 @@
    [("-p" "--project") dir
                        "Specify project directory"
                        (current-project-directory (build-path dir))]
+   [("-n" "--name") name
+                    "Specify skin name"
+                    (current-skinname name)]
+
    [("-r" "--revision") rev
                         "Specify revision string (default is 'dev')"
                         (current-revision rev)]
@@ -124,10 +129,9 @@
   (map trim (files dir)))
 
 (define (package dir)
-  (define skinname (path->string (path-replace (current-project-directory) #rx".*skin\\." "")))
   (define outfile (build-path (current-project-directory)
                               ".out"
-                              (string-append skinname " " (current-revision) ".zip")))
+                              (string-append (current-skinname) " " (current-revision) ".zip")))
   (run-command "7z" "a"
                (path->string outfile)
                (map path->string (directory-list cache-directory #:build? #t)))
