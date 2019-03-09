@@ -15,8 +15,8 @@
    viewBox="0 0 290 290"
    version="1.1"
    id="SVGRoot"
-   inkscape:version="0.92.2 2405546, 2018-03-11"
-   sodipodi:docname="hitcircle@2x.svg">
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="fruit-apple@2x.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="114.55169"
-     inkscape:cy="147.53997"
+     inkscape:cx="82.024779"
+     inkscape:cy="165.21764"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1050"
+     inkscape:window-height="1031"
      inkscape:window-x="0"
-     inkscape:window-y="29"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true"
      showguides="false" />
@@ -62,6 +62,34 @@
          transform="matrix(0.8,0,0,0.8,10,0)"
          inkscape:connector-curvature="0" />
     </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Lstart-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4509-0" />
+    </marker>
+    <filter
+       height="1.2952"
+       y="-0.14999999999999999"
+       width="1.2952"
+       x="-0.14999999999999999"
+       id="filter5736"
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur5738"
+         stdDeviation="6.21"
+         inkscape:collect="always" />
+    </filter>
   </defs>
   <metadata
      id="metadata3683">
@@ -71,7 +99,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -89,8 +117,26 @@
        id="circle8539"
        cx="145"
        cy="152"
-       style="fill:#ffffff;fill-opacity:0.13333334;stroke:none;stroke-width:12.24565125;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       style="fill:#ffffff;fill-opacity:0.45882353;stroke:none;stroke-width:12.24565125;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        rx="115.34814"
        ry="115.41876" />
+    <g
+       id="layer2-3"
+       inkscape:label="bg"
+       transform="translate(-293.72034,-3.264499)" />
+    <circle
+       transform="matrix(0.97638422,0,0,0.97638534,0.54431436,12.022223)"
+       id="circle8537-3"
+       cx="148.5"
+       cy="143.91362"
+       r="114.65957"
+       style="fill:none;fill-opacity:0.19607843;stroke:#000000;stroke-width:20.48372841;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter5736)" />
+    <ellipse
+       ry="112.01369"
+       rx="111.94516"
+       id="circle8537"
+       cx="145"
+       cy="152"
+       style="fill:none;fill-opacity:0.50196078;stroke:#ffffff;stroke-width:19.38100052;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
   </g>
 </svg>
