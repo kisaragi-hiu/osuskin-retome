@@ -1,6 +1,6 @@
 # Retome
 
-Kisaragi Hiu's personal skin.
+A skin focused on glow and shadow effects.
 
 ## Forum posts
 
