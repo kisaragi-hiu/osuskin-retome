@@ -5,8 +5,8 @@
 # this file should be run in context of where it's located
 cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
-cp ./osu-resources/osu.Game.Resources/Samples/Gameplay/*.wav ./
-# Use Argon Pro samples
+# Use Argon + Argon Pro samples
+cp ./osu-resources/osu.Game.Resources/Samples/Gameplay/Argon/*.wav ./
 cp ./osu-resources/osu.Game.Resources/Samples/Gameplay/ArgonPro/*.wav ./
 
 list_rendered () {
