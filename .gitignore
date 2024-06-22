@@ -9,3 +9,4 @@ fonts/
 .cache
 to-move
 _out
+audio%external/*.wav

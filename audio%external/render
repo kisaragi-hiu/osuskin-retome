@@ -6,6 +6,8 @@
 cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
 cp ./osu-resources/osu.Game.Resources/Samples/Gameplay/*.wav ./
+# Use Argon Pro samples
+cp ./osu-resources/osu.Game.Resources/Samples/Gameplay/ArgonPro/*.wav ./
 
 list_rendered () {
   printf "["

@@ -9,6 +9,7 @@ https://osu.ppy.sh/community/forums/topics/630525?start=6195149
 ## Building
 
 ```bash
+git submodule update --init --recursive --progress --depth=1 --checkout
 racket mkosuskin.rkt -m ja -m external -r dev
 ```
 
@@ -24,9 +25,10 @@ to render the Japanese version with external assets as the "dev" release.
 - bash
 - sed
 - gm (graphicsmagick)
-- convert (imagemagick)
+- magick (imagemagick)
 - pngquant
 - vips
+- racket
 
 #### Fonts
 
@@ -47,5 +49,4 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 ### Credits
 
-- applause.ogg, failsound.ogg, and pause-loop.ogg are piano performances of Tree Shade Waltz, Gate of Steiner, and Flower Dance, respectively.
-- Hitsounds are taken from [osu-resources](//github.com/ppy/osu-resources), which is under CC-BY-NC 4.0 as well.
+- Hitsounds are taken from [osu-resources](//github.com/ppy/osu-resources), which is under CC-BY-NC 4.0.
