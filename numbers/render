@@ -33,7 +33,6 @@ list_rendered () {
 }
 
 sed s/◊hit-overlap◊/10/ template.skin.ini > numbers/inter/skin.ini
-sed s/◊hit-overlap◊/128/ template.skin.ini > numbers/dot/skin.ini
 
 cp numbers/inter/* ./ # Use inter numbers by default
 
