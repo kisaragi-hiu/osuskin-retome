@@ -5,4 +5,4 @@ retome.zip: _out
 	cd .out && 7z a ../retome.zip *
 
 _out:
-	racket mkosuskin.rkt -m ja -m extermal -r dev
+	racket mkosuskin.rkt -m ja -m external -r dev
