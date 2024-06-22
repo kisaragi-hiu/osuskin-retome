@@ -17,8 +17,7 @@
 ;;;    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 ;;;
 ;;;     0. You just DO WHAT THE FUCK YOU WANT TO.
-(require threading
-         "helper.rkt")
+(require "helper.rkt")
 
 (provide resize-@ resize-@2x resize-resizeto crop trim get-@-size)
 
@@ -40,9 +39,9 @@
 
 ;; get-@-size : string -> number
 (define (get-@-size string)
-  (~> (string-replace string #rx".*@" "")
-      (string-replace _ #rx"x.*" "")
-      (string->number _)))
+  (let* ((it (string-replace string #rx".*@" ""))
+         (it (string-replace it #rx"x.*" "")))
+    (string->number it)))
 
 (define (resize-@ path)
   (define base-path (path-basename path))
@@ -75,32 +74,35 @@
          #f]
         [(not (file-exists? path)) #f]
         [else
-          (define target (path-replace path #rx"_resizeto.*.png$" ".png"))
-          (define size (~> (path->string path)
-                           (string-replace _ #rx"^.*resizeto" "")
-                           (string-replace _ #rx"\\..*" "")))
-          (resize-im path target size)
-          (delete-file path)
-          ;; return target
-          target]))
+         (define target (path-replace path #rx"_resizeto.*.png$" ".png"))
+         (define size
+           (let* ((it (path->string path))
+                  (it (string-replace it #rx"^.*resizeto" ""))
+                  (it (string-replace it #rx"\\..*" "")))
+             it))
+         (resize-im path target size)
+         (delete-file path)
+         ;; return target
+         target]))
 
 (define (crop path)
   (define base-path (path-basename path))
   (cond [(not (regexp-match #px"tocrop" (path->string base-path))) #f]
         [(not (file-exists? path)) #f]
         [else
-          (define crop-dimention
-            (~> (path->string path)
-                (regexp-match #px"[[:digit:]]+x[[:digit:]]+\\+[[:digit:]]+\\+[[:digit:]]" _)
-                (first _))) ; regexp-match returns a list of matching substrings
-          (define target (path-replace path (string-append "_tocrop" crop-dimention) ""))
-          (run-command "convert" "-crop"
-                       crop-dimention
-                       (path->string path)
-                       (path->string target))
-          (delete-file path)
-          ;; return target
-          target]))
+         (define crop-dimention
+           (let* ((it (path->string path))
+                  (it (regexp-match #px"[[:digit:]]+x[[:digit:]]+\\+[[:digit:]]+\\+[[:digit:]]" it)))
+             ;; regexp-match returns a list of matching substrings
+             (first it)))
+         (define target (path-replace path (string-append "_tocrop" crop-dimention) ""))
+         (run-command "convert" "-crop"
+                      crop-dimention
+                      (path->string path)
+                      (path->string target))
+         (delete-file path)
+         ;; return target
+         target]))
 
 (define (trim path)
   (define base-path (path-basename path))

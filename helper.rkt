@@ -22,7 +22,6 @@
 
 (require (for-syntax racket/base
                      syntax/parse)
-         threading
          rackunit)
 
 (provide (all-defined-out))
@@ -55,9 +54,10 @@
 ;; each argument is a seperate argument on command line
 (define/contract (run-command . lst)
   (->* () () #:rest (rec/c t (or/c string? (listof t))) boolean?) ; system returns a boolean
-  (system (~> (flatten lst)
-              (map (λ (x) (string-replace x " " "\\ ")) _)
-              string-join)))
+  (system (string-join
+           (map (λ (x)
+                  (string-replace x " " "\\ "))
+                (flatten lst)))))
 
 ; Thanks https://stackoverflow.com/questions/47908137/checking-if-lists-share-one-or-more-elements-in-racket
 (define (share-some-elements? . sets)

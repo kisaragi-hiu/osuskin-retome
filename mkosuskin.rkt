@@ -1,4 +1,4 @@
-#lang rackjure
+#lang racket
 ;;; Copyright © 2019 Kisaragi Hiu <mail@kisaragi-hiu.com>
 ;;;
 ;;; This work is Free.
@@ -19,7 +19,6 @@
 ;;;     0. You just DO WHAT THE FUCK YOU WANT TO.
 
 (require json
-         threading
          "helper.rkt"
          "post-process.rkt")
 
@@ -37,21 +36,23 @@
   (map delete-directory/files
        (directory-list cache-directory #:build? #t))
   ;; this should be run here, after modules has already been set
-  (map render-directory (~> (directory-list (current-project-directory) #:build? #t)
-                            (filter directory-exists? _) ; only directories
-                            (filter #λ(file-exists? (build-path %1 "render")) _) ; if dir/render is a file
-                            (filter (λ (%1)
-                                       (if (member 'execute
-                                                   (file-or-directory-permissions
-                                                     (build-path %1 "render")))
-                                         #t
-                                         (begin
-                                           (displayln (string-append "warning: "
-                                                                     (path->string (build-path %1 "render"))
-                                                                     " is present but is not executable"))
-                                           #f)))
-                                    _)
-                            (filter default-directories-or-specified-module? _)))
+  (map render-directory
+       (let* ((it (directory-list (current-project-directory) #:build? #t))
+              (it (filter directory-exists? it)) ; only directories
+              (it (filter (λ (%1) (file-exists? (build-path %1 "render"))) it)) ; if dir/render is a file
+              (it (filter (λ (%1)
+                            (if (member 'execute
+                                        (file-or-directory-permissions
+                                         (build-path %1 "render")))
+                                #t
+                                (begin
+                                  (displayln (string-append "warning: "
+                                                            (path->string (build-path %1 "render"))
+                                                            " is present but is not executable"))
+                                  #f)))
+                          it))
+              (it (filter default-directories-or-specified-module? it)))
+         it))
   (post-process cache-directory)
   (optimize-png-in-dir cache-directory)
   (package cache-directory))
@@ -77,10 +78,14 @@
 
 (define (default-directories-or-specified-module? path)
   (define (parse-mods path)
-    (~> (string-split (path->string path) "%")
-        (map (λ (x) (string-split x ".")) _) ; handle a%ja.blend
-        (rest) ; first element is path up to first "%". drop it
-        (map first _))) ; drop the extension after string-split
+    (let* ((it (string-split (path->string path) "%"))
+           ;; handle a%ja.blend
+           (it (map (λ (x) (string-split x ".")) it))
+           ;; first element is path up to first "%". drop it
+           (it (rest it))
+           ;; drop the extension after string-split
+           (it (map first it)))
+      it))
   (cond
     ; if path doesn't specify module like path%modname, it should be rendered
     [(not (path-contains? (path-basename path) "%")) #t]
@@ -130,7 +135,7 @@
 
 (define (package dir)
   (define outfile (build-path (current-project-directory)
-                              ".out"
+                              "_out"
                               (string-append (current-skinname) " " (current-revision) ".zip")))
   (run-command "7z" "a"
                (path->string outfile)
@@ -143,10 +148,11 @@
 (define (optimize-png-in-dir dir)
   (displayln "optimizing png")
   (run-command "pngquant" "--skip-if-larger" "--ext" ".png" "--force"
-               (~> (directory-list dir)
-                   (filter #λ(path-has-extension? %1 ".png") _)
-                   (map #λ(build-path dir %1) _)
-                   (map path->string _))))
+               (let* ((it (directory-list dir))
+                      (it (filter (λ (%1) (path-has-extension? %1 ".png")) it))
+                      (it (map (λ (%1) (build-path dir %1)) it))
+                      (it (map path->string it)))
+                 it)))
 
 (unless (= 0 (vector-length (current-command-line-arguments)))
   (main))
