@@ -19,6 +19,7 @@
 ;;;     0. You just DO WHAT THE FUCK YOU WANT TO.
 
 (require json
+         racket/future
          "helper.rkt"
          "post-process.rkt")
 
@@ -36,23 +37,23 @@
   (map delete-directory/files
        (directory-list cache-directory #:build? #t))
   ;; this should be run here, after modules has already been set
-  (map render-directory
-       (let* ((it (directory-list (current-project-directory) #:build? #t))
-              (it (filter directory-exists? it)) ; only directories
-              (it (filter (λ (%1) (file-exists? (build-path %1 "render"))) it)) ; if dir/render is a file
-              (it (filter (λ (%1)
-                            (if (member 'execute
-                                        (file-or-directory-permissions
-                                         (build-path %1 "render")))
-                                #t
-                                (begin
-                                  (displayln (string-append "warning: "
-                                                            (path->string (build-path %1 "render"))
-                                                            " is present but is not executable"))
-                                  #f)))
-                          it))
-              (it (filter default-directories-or-specified-module? it)))
-         it))
+  (for/async ((it (let* ((it (directory-list (current-project-directory) #:build? #t))
+                         (it (filter directory-exists? it)) ; only directories
+                         (it (filter (λ (%1) (file-exists? (build-path %1 "render"))) it)) ; if dir/render is a file
+                         (it (filter (λ (%1)
+                                       (if (member 'execute
+                                                   (file-or-directory-permissions
+                                                    (build-path %1 "render")))
+                                           #t
+                                           (begin
+                                             (displayln (string-append "warning: "
+                                                                       (path->string (build-path %1 "render"))
+                                                                       " is present but is not executable"))
+                                             #f)))
+                                     it))
+                         (it (filter default-directories-or-specified-module? it)))
+                    it)))
+    (render-directory it))
   (post-process cache-directory)
   (optimize-png-in-dir cache-directory)
   (package cache-directory))
