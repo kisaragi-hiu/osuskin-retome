@@ -8,4 +8,4 @@ src/*.png
 fonts/
 .cache
 to-move
-.out
+_out
