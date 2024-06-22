@@ -96,7 +96,7 @@
              ;; regexp-match returns a list of matching substrings
              (first it)))
          (define target (path-replace path (string-append "_tocrop" crop-dimention) ""))
-         (run-command "convert" "-crop"
+         (run-command "magick" "-crop"
                       crop-dimention
                       (path->string path)
                       (path->string target))
@@ -110,7 +110,7 @@
         [(not (file-exists? path)) #f]
         [else
           (define target (path-replace path "totrim" ""))
-          (run-command "convert" "-trim" "+repage"
+          (run-command "magick" "-trim" "+repage"
                        (path->string path)
                        (path->string target))
           (delete-file path)
