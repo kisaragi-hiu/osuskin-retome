@@ -26,34 +26,36 @@
 (define current-project-directory (make-parameter (build-path (current-directory))))
 (define current-revision (make-parameter "dev"))
 (define current-skinname (make-parameter "Retome"))
+(define current-skip-render (make-parameter #f))
 (define modules empty)
 (define cache-directory (build-path (current-project-directory) ".cache"))
 
 (define (main)
   (parse-arguments)
-  (unless (directory-exists? cache-directory)
-    (make-directory cache-directory))
-  ;; just clean up cache for now
-  (map delete-directory/files
-       (directory-list cache-directory #:build? #t))
-  ;; this should be run here, after modules has already been set
-  (for/async ((it (let* ((it (directory-list (current-project-directory) #:build? #t))
-                         (it (filter directory-exists? it)) ; only directories
-                         (it (filter (λ (%1) (file-exists? (build-path %1 "render"))) it)) ; if dir/render is a file
-                         (it (filter (λ (%1)
-                                       (if (member 'execute
-                                                   (file-or-directory-permissions
-                                                    (build-path %1 "render")))
-                                           #t
-                                           (begin
-                                             (displayln (string-append "warning: "
-                                                                       (path->string (build-path %1 "render"))
-                                                                       " is present but is not executable"))
-                                             #f)))
-                                     it))
-                         (it (filter default-directories-or-specified-module? it)))
-                    it)))
-    (render-directory it))
+  (unless (current-skip-render)
+    (unless (directory-exists? cache-directory)
+      (make-directory cache-directory))
+    ;; just clean up cache for now
+    (map delete-directory/files
+         (directory-list cache-directory #:build? #t))
+    ;; this should be run here, after modules has already been set
+    (for/async ((it (let* ((it (directory-list (current-project-directory) #:build? #t))
+                           (it (filter directory-exists? it)) ; only directories
+                           (it (filter (λ (%1) (file-exists? (build-path %1 "render"))) it)) ; if dir/render is a file
+                           (it (filter (λ (%1)
+                                         (if (member 'execute
+                                                     (file-or-directory-permissions
+                                                      (build-path %1 "render")))
+                                             #t
+                                             (begin
+                                               (displayln (string-append "warning: "
+                                                                         (path->string (build-path %1 "render"))
+                                                                         " is present but is not executable"))
+                                               #f)))
+                                       it))
+                           (it (filter default-directories-or-specified-module? it)))
+                      it)))
+      (render-directory it)))
   (post-process cache-directory)
   (optimize-png-in-dir cache-directory)
   (package cache-directory))
@@ -68,7 +70,8 @@
    [("-n" "--name") name
                     "Specify skin name"
                     (current-skinname name)]
-
+   ["--skip-render" "Skip rendering and just do post processing on cache"
+                    (current-skip-render #t)]
    [("-r" "--revision") rev
                         "Specify revision string (default is 'dev')"
                         (current-revision rev)]
