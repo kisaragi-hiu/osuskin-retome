@@ -1,8 +1,3 @@
-retome.osk: retome.zip
-	mv retome.zip retome.osk
-
-retome.zip: _out
-	cd .out && 7z a ../retome.zip *
-
-_out:
+retome.osk:
 	racket mkosuskin.rkt -m ja -m external -r dev
+	mv _out/*.osk retome.osk
