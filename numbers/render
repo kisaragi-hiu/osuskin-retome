@@ -32,8 +32,4 @@ list_rendered () {
   printf ']\n' # single quote so \n is parsed by printf not bash
 }
 
-sed s/◊hit-overlap◊/10/ template.skin.ini > numbers/inter/skin.ini
-
-cp numbers/inter/* ./ # Use inter numbers by default
-
 list_rendered > to-move
